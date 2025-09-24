@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khamsan Naenudorn — Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* ลายพื้นหลังเบา ๆ */
+        min-height: 100vh;
+        padding-top: 40px;
+        background-attachment: fixed;
+      }
+      .profile-card {
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        overflow: hidden;
+        background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+        color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .profile-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+      }
+      .profile-img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: transform 0.5s ease;
+      }
+      .profile-img:hover {
+        transform: scale(1.05);
+      }
+      .badge-dept {
+        background: linear-gradient(90deg,#ff758c,#ff7eb3);
+        color: white;
+      }
+      .divider {
+        height: 2px;
+        background: linear-gradient(90deg, #f093fb, #f5576c);
+        border-radius: 2px;
+      }
+      nav.navbar {
+        background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+      }
+      nav .navbar-brand span, nav .nav-link {
+        color: #fff !important;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      nav .nav-link:hover {
+        color: #ffe082 !important;
+      }
+      .card {
+        border-radius: 16px;
+        background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        color: #333;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      footer {
+        color: #fff;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg mb-4 rounded-3 shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="bi bi-person-circle fs-3 text-light me-2"></i>
+            <span class="fw-bold">Khamsan Naenudorn</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#aboutModal">เกี่ยวกับ</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="profile-card p-3 p-md-0">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://img5.pic.in.th/file/secure-sv1/816d7dcc-1c76-41fb-876f-ff79686aa7a8.jpeg" alt="Atchara" class="profile-img w-100 h-100">
+              </div>
+              <div class="col-md-8">
+                <div class="p-4">
+                  <h1 class="h3 mb-1">My name is <span class="fw-bold">Khamsan Naenudorn</span></h1>
+                  <p class="mb-2">ครู /กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</p>
+
+                  <div class="mb-3">
+                    <span class="badge badge-dept py-2 px-3 me-2">Department: Science &amp; Technology</span>
+                    <span class="badge bg-light text-dark py-2 px-3">School: PadeangNonghooNongtoNonthai</span>
+                  </div>
+
+                  <div class="row mt-3">
+                    <div class="col-sm-6">
+                      <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>
+                        <a href="mailto:admin@pdschool.ac.th" class="text-white">admin@pdschool.ac.th</a>
+                      </p>
+                      <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>เบอร์โทร:081 843 7936</p>
+                    </div>
+                    <div class="col-sm-6 text-sm-end mt-3 mt-sm-0">
+                      <a class="btn btn-light text-primary me-2" href="mailto:admin@pdschool.ac.th"><i class="bi bi-mailbox"></i> ส่งอีเมล</a>
+                      <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#aboutModal"><i class="bi bi-info-circle"></i> เกี่ยวกับฉัน</button>
+                    </div>
+                  </div>
+
+                  <div class="divider my-3"></div>
+                  <section id="about">
+                    <h2 class="h6 mb-2">About / ประวัติย่อ</h2>
+                    <p class="mb-0">ผู้สอนวิชาคอมพิวเตอร์และวิทยาการคำนวณ ให้ความสนใจด้านการสอนเชิงปฏิบัติ และการพัฒนา Web App ด้วย Google Apps Script. (แก้ไขข้อความนี้ได้ตามต้องการ)</p>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h6">ทักษะ</h3>
+                  <ul class="mb-0">
+                    <li>พัฒนา Web App (Google Apps Script)</li>
+                    <li>ออกแบบกิจกรรมการเรียนการสอน</li>
+                    <li>การสอนวิชาคอมพิวเตอร์และเทคโนโลยี</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title h6">ลิงก์สำคัญ</h3>
+                  <p class="mb-1"><a href="#">Google Drive / ตัวอย่างผลงาน</a></p>
+                  <p class="mb-0"><a href="#">GitHub / โค้ดตัวอย่าง</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <footer class="text-center mt-4 mb-5">
+            <small>© PadeangNonghooNongtoNonthai — สร้างโดย Khamsan Naenudorn</small>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal เกี่ยวกับฉัน -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient" style="background: linear-gradient(90deg,#84fab0,#8fd3f4); color:white;">
+            <h5 class="modal-title" id="aboutModalLabel">เกี่ยวกับฉัน</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="https://img5.pic.in.th/file/secure-sv1/Screenshot-2568-09-24-at-11.09.25.md.png" alt="About" class="img-fluid rounded mb-3" style="max-height:400px;">
+            <p>ยินดีต้อนรับสู่หน้าเกี่ยวกับฉัน คลิกด้านล่างเพื่อเยี่ยมชมเว็บไซต์ของฉัน</p>
+            <a href="https://www.kunchang.in.th" target="_blank" class="btn btn-primary"><i class="bi bi-globe"></i> เข้าสู่เว็บไซต์</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
